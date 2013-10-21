@@ -6,37 +6,37 @@ goog.require('cljs.core.async.impl.dispatch');
 goog.require('cljs.core.async.impl.dispatch');
 goog.require('cljs.core.async.impl.protocols');
 goog.require('cljs.core.async.impl.protocols');
-cljs.core.async.impl.channels.box = (function box(val){if(typeof cljs.core.async.impl.channels.t7153 !== 'undefined')
+cljs.core.async.impl.channels.box = (function box(val){if(typeof cljs.core.async.impl.channels.t7194 !== 'undefined')
 {} else
-{goog.provide('cljs.core.async.impl.channels.t7153');
+{goog.provide('cljs.core.async.impl.channels.t7194');
 
 /**
 * @constructor
 */
-cljs.core.async.impl.channels.t7153 = (function (val,box,meta7154){
+cljs.core.async.impl.channels.t7194 = (function (val,box,meta7195){
 this.val = val;
 this.box = box;
-this.meta7154 = meta7154;
+this.meta7195 = meta7195;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 this.cljs$lang$protocol_mask$partition0$ = 425984;
 })
-cljs.core.async.impl.channels.t7153.cljs$lang$type = true;
-cljs.core.async.impl.channels.t7153.cljs$lang$ctorStr = "cljs.core.async.impl.channels/t7153";
-cljs.core.async.impl.channels.t7153.cljs$lang$ctorPrWriter = (function (this__3443__auto__,writer__3444__auto__,opt__3445__auto__){return cljs.core._write.call(null,writer__3444__auto__,"cljs.core.async.impl.channels/t7153");
+cljs.core.async.impl.channels.t7194.cljs$lang$type = true;
+cljs.core.async.impl.channels.t7194.cljs$lang$ctorStr = "cljs.core.async.impl.channels/t7194";
+cljs.core.async.impl.channels.t7194.cljs$lang$ctorPrWriter = (function (this__3443__auto__,writer__3444__auto__,opt__3445__auto__){return cljs.core._write.call(null,writer__3444__auto__,"cljs.core.async.impl.channels/t7194");
 });
-cljs.core.async.impl.channels.t7153.prototype.cljs$core$IDeref$_deref$arity$1 = (function (_){var self__ = this;
+cljs.core.async.impl.channels.t7194.prototype.cljs$core$IDeref$_deref$arity$1 = (function (_){var self__ = this;
 return self__.val;
 });
-cljs.core.async.impl.channels.t7153.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_7155){var self__ = this;
-return self__.meta7154;
+cljs.core.async.impl.channels.t7194.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_7196){var self__ = this;
+return self__.meta7195;
 });
-cljs.core.async.impl.channels.t7153.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_7155,meta7154__$1){var self__ = this;
-return (new cljs.core.async.impl.channels.t7153(self__.val,self__.box,meta7154__$1));
+cljs.core.async.impl.channels.t7194.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_7196,meta7195__$1){var self__ = this;
+return (new cljs.core.async.impl.channels.t7194(self__.val,self__.box,meta7195__$1));
 });
-cljs.core.async.impl.channels.__GT_t7153 = (function __GT_t7153(val__$1,box__$1,meta7154){return (new cljs.core.async.impl.channels.t7153(val__$1,box__$1,meta7154));
+cljs.core.async.impl.channels.__GT_t7194 = (function __GT_t7194(val__$1,box__$1,meta7195){return (new cljs.core.async.impl.channels.t7194(val__$1,box__$1,meta7195));
 });
 }
-return (new cljs.core.async.impl.channels.t7153(val,box,null));
+return (new cljs.core.async.impl.channels.t7194(val,box,null));
 });
 goog.provide('cljs.core.async.impl.channels.PutBox');
 
@@ -80,12 +80,12 @@ if(self__.closed)
 } else
 {self__.closed = true;
 while(true){
-var taker_7156 = self__.takes.pop();if((taker_7156 == null))
+var taker_7197 = self__.takes.pop();if((taker_7197 == null))
 {} else
-{if(cljs.core.async.impl.protocols.active_QMARK_.call(null,taker_7156))
-{var take_cb_7157 = cljs.core.async.impl.protocols.commit.call(null,taker_7156);cljs.core.async.impl.dispatch.run.call(null,((function (take_cb_7157,taker_7156){
-return (function (){return take_cb_7157.call(null,null);
-});})(take_cb_7157,taker_7156))
+{if(cljs.core.async.impl.protocols.active_QMARK_.call(null,taker_7197))
+{var take_cb_7198 = cljs.core.async.impl.protocols.commit.call(null,taker_7197);cljs.core.async.impl.dispatch.run.call(null,((function (take_cb_7198,taker_7197){
+return (function (){return take_cb_7198.call(null,null);
+});})(take_cb_7198,taker_7197))
 );
 } else
 {}

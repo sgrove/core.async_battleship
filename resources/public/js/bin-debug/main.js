@@ -3506,16 +3506,16 @@ cljs.core.with_meta = function with_meta(b, c) {
     c && (b ? (c = (c = b.cljs$lang$protocol_mask$partition0$ & 262144) ? c : b.cljs$core$IWithMeta$, c = c ? !0 : b.cljs$lang$protocol_mask$partition0$ ? !1 : cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, b)) : c = cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, b), c = !c);
     return c
   }() ? with_meta.call(null, function() {
-    "undefined" === typeof cljs.core.t6307 && (cljs.core.t6307 = {}, cljs.core.t6307 = function(b, c, f, g) {
+    "undefined" === typeof cljs.core.t6348 && (cljs.core.t6348 = {}, cljs.core.t6348 = function(b, c, f, g) {
       this.meta = b;
       this.o = c;
       this.with_meta = f;
-      this.meta6308 = g;
+      this.meta6349 = g;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393217
-    }, cljs.core.t6307.cljs$lang$type = !0, cljs.core.t6307.cljs$lang$ctorStr = "cljs.core/t6307", cljs.core.t6307.cljs$lang$ctorPrWriter = function(b, c, f) {
-      return cljs.core._write.call(null, c, "cljs.core/t6307")
-    }, cljs.core.t6307.prototype.call = function() {
+    }, cljs.core.t6348.cljs$lang$type = !0, cljs.core.t6348.cljs$lang$ctorStr = "cljs.core/t6348", cljs.core.t6348.cljs$lang$ctorPrWriter = function(b, c, f) {
+      return cljs.core._write.call(null, c, "cljs.core/t6348")
+    }, cljs.core.t6348.prototype.call = function() {
       var b = function(b, c) {
         return cljs.core.apply.call(null, b.o, c)
       }, c = function(c, e) {
@@ -3532,17 +3532,17 @@ cljs.core.with_meta = function with_meta(b, c) {
       };
       c.cljs$core$IFn$_invoke$arity$variadic = b;
       return c
-    }(), cljs.core.t6307.prototype.apply = function(b, c) {
+    }(), cljs.core.t6348.prototype.apply = function(b, c) {
       b = this;
       return b.call.apply(b, [b].concat(c.slice()))
-    }, cljs.core.t6307.prototype.cljs$core$Fn$ = !0, cljs.core.t6307.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-      return this.meta6308
-    }, cljs.core.t6307.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-      return new cljs.core.t6307(this.meta, this.o, this.with_meta, c)
-    }, cljs.core.__GT_t6307 = function(b, c, f, g) {
-      return new cljs.core.t6307(b, c, f, g)
+    }, cljs.core.t6348.prototype.cljs$core$Fn$ = !0, cljs.core.t6348.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+      return this.meta6349
+    }, cljs.core.t6348.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+      return new cljs.core.t6348(this.meta, this.o, this.with_meta, c)
+    }, cljs.core.__GT_t6348 = function(b, c, f, g) {
+      return new cljs.core.t6348(b, c, f, g)
     });
-    return new cljs.core.t6307(c, b, with_meta, null)
+    return new cljs.core.t6348(c, b, with_meta, null)
   }(), c) : cljs.core._with_meta.call(null, b, c)
 };
 cljs.core.meta = function(a) {
@@ -19720,26 +19720,26 @@ cljs.core.async.impl.ioc_helpers.finished_QMARK_ = function(a) {
   return a[cljs.core.async.impl.ioc_helpers.STATE_IDX] === new cljs.core.Keyword(null, "finished", "finished", 4635210724)
 };
 cljs.core.async.impl.ioc_helpers.fn_handler = function fn_handler(b) {
-  "undefined" === typeof cljs.core.async.impl.ioc_helpers.t7164 && (cljs.core.async.impl.ioc_helpers.t7164 = {}, cljs.core.async.impl.ioc_helpers.t7164 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.impl.ioc_helpers.t7205 && (cljs.core.async.impl.ioc_helpers.t7205 = {}, cljs.core.async.impl.ioc_helpers.t7205 = function(b, d, e) {
     this.f = b;
     this.fn_handler = d;
-    this.meta7165 = e;
+    this.meta7206 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.impl.ioc_helpers.t7164.cljs$lang$type = !0, cljs.core.async.impl.ioc_helpers.t7164.cljs$lang$ctorStr = "cljs.core.async.impl.ioc-helpers/t7164", cljs.core.async.impl.ioc_helpers.t7164.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async.impl.ioc-helpers/t7164")
-  }, cljs.core.async.impl.ioc_helpers.t7164.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.impl.ioc_helpers.t7164.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.impl.ioc_helpers.t7205.cljs$lang$type = !0, cljs.core.async.impl.ioc_helpers.t7205.cljs$lang$ctorStr = "cljs.core.async.impl.ioc-helpers/t7205", cljs.core.async.impl.ioc_helpers.t7205.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async.impl.ioc-helpers/t7205")
+  }, cljs.core.async.impl.ioc_helpers.t7205.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.impl.ioc_helpers.t7205.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return!0
-  }, cljs.core.async.impl.ioc_helpers.t7164.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.impl.ioc_helpers.t7205.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     return this.f
-  }, cljs.core.async.impl.ioc_helpers.t7164.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta7165
-  }, cljs.core.async.impl.ioc_helpers.t7164.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.impl.ioc_helpers.t7164(this.f, this.fn_handler, d)
-  }, cljs.core.async.impl.ioc_helpers.__GT_t7164 = function(b, d, e) {
-    return new cljs.core.async.impl.ioc_helpers.t7164(b, d, e)
+  }, cljs.core.async.impl.ioc_helpers.t7205.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta7206
+  }, cljs.core.async.impl.ioc_helpers.t7205.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.impl.ioc_helpers.t7205(this.f, this.fn_handler, d)
+  }, cljs.core.async.impl.ioc_helpers.__GT_t7205 = function(b, d, e) {
+    return new cljs.core.async.impl.ioc_helpers.t7205(b, d, e)
   });
-  return new cljs.core.async.impl.ioc_helpers.t7164(b, fn_handler, null)
+  return new cljs.core.async.impl.ioc_helpers.t7205(b, fn_handler, null)
 };
 cljs.core.async.impl.ioc_helpers.run_state_machine = function(a) {
   return cljs.core.async.impl.ioc_helpers.aget_object.call(null, a, cljs.core.async.impl.ioc_helpers.FN_IDX).call(null, a)
@@ -20010,24 +20010,24 @@ cljs.core.async.impl.dispatch.queue_delay = function(a, b) {
 };
 cljs.core.async.impl.channels = {};
 cljs.core.async.impl.channels.box = function box(b) {
-  "undefined" === typeof cljs.core.async.impl.channels.t7153 && (cljs.core.async.impl.channels.t7153 = {}, cljs.core.async.impl.channels.t7153 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.impl.channels.t7194 && (cljs.core.async.impl.channels.t7194 = {}, cljs.core.async.impl.channels.t7194 = function(b, d, e) {
     this.val = b;
     this.box = d;
-    this.meta7154 = e;
+    this.meta7195 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 425984
-  }, cljs.core.async.impl.channels.t7153.cljs$lang$type = !0, cljs.core.async.impl.channels.t7153.cljs$lang$ctorStr = "cljs.core.async.impl.channels/t7153", cljs.core.async.impl.channels.t7153.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async.impl.channels/t7153")
-  }, cljs.core.async.impl.channels.t7153.prototype.cljs$core$IDeref$_deref$arity$1 = function(b) {
+  }, cljs.core.async.impl.channels.t7194.cljs$lang$type = !0, cljs.core.async.impl.channels.t7194.cljs$lang$ctorStr = "cljs.core.async.impl.channels/t7194", cljs.core.async.impl.channels.t7194.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async.impl.channels/t7194")
+  }, cljs.core.async.impl.channels.t7194.prototype.cljs$core$IDeref$_deref$arity$1 = function(b) {
     return this.val
-  }, cljs.core.async.impl.channels.t7153.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta7154
-  }, cljs.core.async.impl.channels.t7153.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.impl.channels.t7153(this.val, this.box, d)
-  }, cljs.core.async.impl.channels.__GT_t7153 = function(b, d, e) {
-    return new cljs.core.async.impl.channels.t7153(b, d, e)
+  }, cljs.core.async.impl.channels.t7194.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta7195
+  }, cljs.core.async.impl.channels.t7194.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.impl.channels.t7194(this.val, this.box, d)
+  }, cljs.core.async.impl.channels.__GT_t7194 = function(b, d, e) {
+    return new cljs.core.async.impl.channels.t7194(b, d, e)
   });
-  return new cljs.core.async.impl.channels.t7153(b, box, null)
+  return new cljs.core.async.impl.channels.t7194(b, box, null)
 };
 cljs.core.async.impl.channels.PutBox = function(a, b) {
   this.handler = a;
@@ -20411,26 +20411,26 @@ cljs.core.async.impl.timers.timeout = function(a) {
   return d
 };
 cljs.core.async.fn_handler = function fn_handler$$0(b) {
-  "undefined" === typeof cljs.core.async.t7097 && (cljs.core.async.t7097 = {}, cljs.core.async.t7097 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.t7138 && (cljs.core.async.t7138 = {}, cljs.core.async.t7138 = function(b, d, e) {
     this.f = b;
     this.fn_handler = d;
-    this.meta7098 = e;
+    this.meta7139 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.t7097.cljs$lang$type = !0, cljs.core.async.t7097.cljs$lang$ctorStr = "cljs.core.async/t7097", cljs.core.async.t7097.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async/t7097")
-  }, cljs.core.async.t7097.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t7097.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.t7138.cljs$lang$type = !0, cljs.core.async.t7138.cljs$lang$ctorStr = "cljs.core.async/t7138", cljs.core.async.t7138.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async/t7138")
+  }, cljs.core.async.t7138.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t7138.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return!0
-  }, cljs.core.async.t7097.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.t7138.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     return this.f
-  }, cljs.core.async.t7097.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta7098
-  }, cljs.core.async.t7097.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.t7097(this.f, this.fn_handler, d)
-  }, cljs.core.async.__GT_t7097 = function(b, d, e) {
-    return new cljs.core.async.t7097(b, d, e)
+  }, cljs.core.async.t7138.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta7139
+  }, cljs.core.async.t7138.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.t7138(this.f, this.fn_handler, d)
+  }, cljs.core.async.__GT_t7138 = function(b, d, e) {
+    return new cljs.core.async.t7138(b, d, e)
   });
-  return new cljs.core.async.t7097(b, fn_handler$$0, null)
+  return new cljs.core.async.t7138(b, fn_handler$$0, null)
 };
 cljs.core.async.buffer = function(a) {
   return cljs.core.async.impl.buffers.fixed_buffer.call(null, a)
@@ -20544,51 +20544,51 @@ cljs.core.async.random_array = function(a) {
 };
 cljs.core.async.alt_flag = function alt_flag() {
   var b = cljs.core.atom.call(null, !0);
-  "undefined" === typeof cljs.core.async.t7108 && (cljs.core.async.t7108 = {}, cljs.core.async.t7108 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.t7149 && (cljs.core.async.t7149 = {}, cljs.core.async.t7149 = function(b, d, e) {
     this.flag = b;
     this.alt_flag = d;
-    this.meta7109 = e;
+    this.meta7150 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.t7108.cljs$lang$type = !0, cljs.core.async.t7108.cljs$lang$ctorStr = "cljs.core.async/t7108", cljs.core.async.t7108.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async/t7108")
-  }, cljs.core.async.t7108.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t7108.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.t7149.cljs$lang$type = !0, cljs.core.async.t7149.cljs$lang$ctorStr = "cljs.core.async/t7149", cljs.core.async.t7149.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async/t7149")
+  }, cljs.core.async.t7149.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t7149.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return cljs.core.deref.call(null, this.flag)
-  }, cljs.core.async.t7108.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.t7149.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     cljs.core.reset_BANG_.call(null, this.flag, null);
     return!0
-  }, cljs.core.async.t7108.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta7109
-  }, cljs.core.async.t7108.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.t7108(this.flag, this.alt_flag, d)
-  }, cljs.core.async.__GT_t7108 = function(b, d, e) {
-    return new cljs.core.async.t7108(b, d, e)
+  }, cljs.core.async.t7149.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta7150
+  }, cljs.core.async.t7149.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.t7149(this.flag, this.alt_flag, d)
+  }, cljs.core.async.__GT_t7149 = function(b, d, e) {
+    return new cljs.core.async.t7149(b, d, e)
   });
-  return new cljs.core.async.t7108(b, alt_flag, null)
+  return new cljs.core.async.t7149(b, alt_flag, null)
 };
 cljs.core.async.alt_handler = function alt_handler(b, c) {
-  "undefined" === typeof cljs.core.async.t7114 && (cljs.core.async.t7114 = {}, cljs.core.async.t7114 = function(b, c, f, g) {
+  "undefined" === typeof cljs.core.async.t7155 && (cljs.core.async.t7155 = {}, cljs.core.async.t7155 = function(b, c, f, g) {
     this.cb = b;
     this.flag = c;
     this.alt_handler = f;
-    this.meta7115 = g;
+    this.meta7156 = g;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.t7114.cljs$lang$type = !0, cljs.core.async.t7114.cljs$lang$ctorStr = "cljs.core.async/t7114", cljs.core.async.t7114.cljs$lang$ctorPrWriter = function(b, c, f) {
-    return cljs.core._write.call(null, c, "cljs.core.async/t7114")
-  }, cljs.core.async.t7114.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t7114.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.t7155.cljs$lang$type = !0, cljs.core.async.t7155.cljs$lang$ctorStr = "cljs.core.async/t7155", cljs.core.async.t7155.cljs$lang$ctorPrWriter = function(b, c, f) {
+    return cljs.core._write.call(null, c, "cljs.core.async/t7155")
+  }, cljs.core.async.t7155.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t7155.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return cljs.core.async.impl.protocols.active_QMARK_.call(null, this.flag)
-  }, cljs.core.async.t7114.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.t7155.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     cljs.core.async.impl.protocols.commit.call(null, this.flag);
     return this.cb
-  }, cljs.core.async.t7114.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta7115
-  }, cljs.core.async.t7114.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new cljs.core.async.t7114(this.cb, this.flag, this.alt_handler, c)
-  }, cljs.core.async.__GT_t7114 = function(b, c, f, g) {
-    return new cljs.core.async.t7114(b, c, f, g)
+  }, cljs.core.async.t7155.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta7156
+  }, cljs.core.async.t7155.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new cljs.core.async.t7155(this.cb, this.flag, this.alt_handler, c)
+  }, cljs.core.async.__GT_t7155 = function(b, c, f, g) {
+    return new cljs.core.async.t7155(b, c, f, g)
   });
-  return new cljs.core.async.t7114(c, b, alt_handler, null)
+  return new cljs.core.async.t7155(c, b, alt_handler, null)
 };
 cljs.core.async.do_alts = function(a, b, c) {
   var d = cljs.core.async.alt_flag.call(null), e = cljs.core.count.call(null, b), f = cljs.core.async.random_array.call(null, e), g = (new cljs.core.Keyword(null, "priority", "priority", 4143410454)).call(null, c), h = function() {
@@ -20643,48 +20643,110 @@ cljs.core.async.alts_BANG_ = function() {
 }();
 var casyncfun = {main:{}};
 console.log("Running ClojureScript inside of casyncfun");
+casyncfun.main.nrepl = function() {
+  return clojure.browser.repl.connect.call(null, "http://localhost:9000/repl")
+};
+goog.exportSymbol("casyncfun.main.nrepl", casyncfun.main.nrepl);
+window.nrepl = casyncfun.main.nrepl;
 casyncfun.main.rc = cljs.core.async.chan.call(null);
-var c__5180__auto___5942 = cljs.core.async.chan.call(null, 1);
-cljs.core.async.impl.dispatch.run.call(null, function() {
-  var a = function() {
-    return function(a) {
-      return function() {
-        var b = null, e = function() {
-          var a = Array(8);
-          a[0] = b;
-          a[1] = 1;
-          return a
-        }, f = function(b) {
-          for(;;) {
-            var d = a.call(null, b);
-            if(d !== new cljs.core.Keyword(null, "recur", "recur", 1122293407)) {
-              return d
+casyncfun.main.c2 = cljs.core.async.chan.call(null, 100);
+casyncfun.main.counter = cljs.core.atom.call(null, 0);
+casyncfun.main.mark_status_BANG_ = function(a) {
+  cljs.core.swap_BANG_.call(null, casyncfun.main.counter, cljs.core.inc);
+  var b = document.getElementById("status");
+  a = [cljs.core.str(b.innerHTML), cljs.core.str("\x3cli\x3e"), cljs.core.str(cljs.core.deref.call(null, casyncfun.main.counter)), cljs.core.str(". "), cljs.core.str(a), cljs.core.str("\x3c/li\x3e")].join("");
+  return b.innerHTML = a
+};
+casyncfun.main.test = function() {
+  casyncfun.main.mark_status_BANG_.call(null, "CLJS Loaded");
+  var a = cljs.core.async.chan.call(null, 1);
+  cljs.core.async.impl.dispatch.run.call(null, function() {
+    var b = function() {
+      return function(a) {
+        return function() {
+          var b = null, c = function() {
+            var a = Array(8);
+            a[0] = b;
+            a[1] = 1;
+            return a
+          }, d = function(b) {
+            for(;;) {
+              var c = a.call(null, b);
+              if(c !== new cljs.core.Keyword(null, "recur", "recur", 1122293407)) {
+                return c
+              }
             }
-          }
-        }, b = function(a) {
-          switch(arguments.length) {
-            case 0:
-              return e.call(this);
-            case 1:
-              return f.call(this, a)
-          }
-          throw Error("Invalid arity: " + arguments.length);
-        };
-        b.cljs$core$IFn$_invoke$arity$0 = e;
-        b.cljs$core$IFn$_invoke$arity$1 = f;
-        return b
-      }()
-    }(function(a) {
-      var b = a[1];
-      return 4 === b ? (b = console.log("Message received: ", a[2]), a[5] = b, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 3 === b ? (b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)) : 2 === b ? (b = console.log("Inside"), a[6] = b, cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 4, casyncfun.main.rc)) : 1 === b ? (b = console.log("Outside"), a[7] = b, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 
-      null
-    })
-  }(), b = function() {
-    var b = a.call(null);
-    b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c__5180__auto___5942;
-    return b
-  }();
-  return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, b)
-});
-cljs.core.async.put_BANG_.call(null, casyncfun.main.rc, "First message");
-cljs.core.async.put_BANG_.call(null, casyncfun.main.rc, "Second message");
+          }, b = function(a) {
+            switch(arguments.length) {
+              case 0:
+                return c.call(this);
+              case 1:
+                return d.call(this, a)
+            }
+            throw Error("Invalid arity: " + arguments.length);
+          };
+          b.cljs$core$IFn$_invoke$arity$0 = c;
+          b.cljs$core$IFn$_invoke$arity$1 = d;
+          return b
+        }()
+      }(function(a) {
+        var b = a[1];
+        return 4 === b ? (b = a[2], b = [cljs.core.str("Message received: "), cljs.core.str(b)].join(""), b = casyncfun.main.mark_status_BANG_.call(null, b), a[5] = b, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 3 === b ? (b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)) : 2 === b ? (b = casyncfun.main.mark_status_BANG_.call(null, "Inside, never gets here."), a[6] = b, cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 4, casyncfun.main.rc)) : 
+        1 === b ? (b = casyncfun.main.mark_status_BANG_.call(null, "Outside"), a[7] = b, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : null
+      })
+    }(), d = function() {
+      var d = b.call(null);
+      d[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = a;
+      return d
+    }();
+    return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, d)
+  });
+  var b = cljs.core.async.chan.call(null, 1);
+  cljs.core.async.impl.dispatch.run.call(null, function() {
+    var a = function() {
+      return function(a) {
+        return function() {
+          var b = null, c = function() {
+            var a = Array(5);
+            a[0] = b;
+            a[1] = 1;
+            return a
+          }, d = function(b) {
+            for(;;) {
+              var c = a.call(null, b);
+              if(c !== new cljs.core.Keyword(null, "recur", "recur", 1122293407)) {
+                return c
+              }
+            }
+          }, b = function(a) {
+            switch(arguments.length) {
+              case 0:
+                return c.call(this);
+              case 1:
+                return d.call(this, a)
+            }
+            throw Error("Invalid arity: " + arguments.length);
+          };
+          b.cljs$core$IFn$_invoke$arity$0 = c;
+          b.cljs$core$IFn$_invoke$arity$1 = d;
+          return b
+        }()
+      }(function(a) {
+        var b = a[1];
+        return 2 === b ? (b = casyncfun.main.mark_status_BANG_.call(null, a[2]), cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)) : 1 === b ? cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 2, casyncfun.main.c2) : null
+      })
+    }(), d = function() {
+      var d = a.call(null);
+      d[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = b;
+      return d
+    }();
+    return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, d)
+  });
+  cljs.core.async.put_BANG_.call(null, casyncfun.main.c2, "My message");
+  cljs.core.async.put_BANG_.call(null, casyncfun.main.rc, "First message");
+  cljs.core.async.put_BANG_.call(null, casyncfun.main.rc, "Second message");
+  cljs.core.async.put_BANG_.call(null, casyncfun.main.c2, "Another message");
+  cljs.core.async.put_BANG_.call(null, casyncfun.main.rc, "First message");
+  return cljs.core.async.put_BANG_.call(null, casyncfun.main.rc, "Second message")
+};
+window.onload = casyncfun.main.test;

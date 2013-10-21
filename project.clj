@@ -5,8 +5,7 @@
             [lein-ancient "0.4.4"]
             [lein-cljsbuild "0.3.4"]
             [lein-ring "0.8.7"]]
-  :dependencies [[com.cemerick/piggieback "0.1.0"]
-                 [compojure "1.1.5"]
+  :dependencies [[compojure "1.1.5"]
                  [hiccup "1.0.4"]
                  [org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-1934"]
@@ -19,7 +18,6 @@
   :ring {:handler casyncfun.handler/app}
   :source-paths ["src/clj"
                  "src/cljs"]
-  :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
   :repositories {"sonatype-oss-public" "https://oss.sonatype.org/content/groups/public/"}
   :cljsbuild {:builds
               [{:source-paths ["src/cljs"],
