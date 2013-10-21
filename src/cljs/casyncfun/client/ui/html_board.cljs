@@ -15,21 +15,26 @@
 
 (def colors ["blue" "green" "red" "pink" "white" "black"])
 
+(def status->color {100 "blue"
+                    101 "red"
+                    102 "yellow"})
+
 (def unknown-style {:color :none
                     :background-color (rand-nth colors)})
 
-(defn row [width id]
-  [:tr (map (fn [x]
-              [:td {:style (str "width:40px;height:40px;color:none;background-color:" (rand-nth colors) ";")
+(defn row [row-data id]
+  [:tr (map (fn [cell x]
+              [:td {:style (str "width:40px;height:40px;color:none;background-color:" (get status->color cell) ";")
                     :data-x x
-                    :data-y id} ""]) (range 0 width))])
+                    :data-y id
+                    :status cell} cell]) row-data (range))])
 
 (defn header-row [s]
   [:tr {:style "text-align: center;"} (map (fn [content] [:td content]) s)])
 
-(defn board [width height]
+(defn board [board-data]
   [:table.board
-   [:tbody (map (partial row width) (range 0 height))]])
+   [:tbody (map row board-data (range))]])
 
 (defn headers [headers]
   [:thead (header-row headers)])
@@ -40,18 +45,32 @@
 (defn add-row-labels [board offset labels]
   (update-in board offset #(map add-row-label % labels)))
 
-(defn build-board* [width height]
-  (let [board (-> (board width height)
+(defn update-cell! [elem cell]
+  (dommy/set-style! elem :background-color (get status->color cell)))
+
+(defn update-row! [elems cells]
+  (dorun (map update-cell! elems cells)))
+
+(defn target->rows [target width]
+  (let [elems  (sel [target :td])]
+    ; Get rid of headers and labels
+    (map (partial drop 1) (drop 1 (partition width elems)))))
+
+(defn update-board! [target board-data]
+  (let [width (count (first board-data))
+        rows (target->rows target width)]
+    (dorun (map update-row! rows board-data))))
+
+(defn build-board* [board-data]
+  (let [width (count (first board-data))
+        board (-> (board board-data)
                   (add-row-labels [1 1] (drop 1 (range))))
         header-seq (take (inc width) alphabet)]
     (into [] (concat [] (subvec board 0 1) [(headers header-seq)] (subvec board 1)))))
 
-(defn build-board! [target width height]
+(defn build-board! [target board-data]
   (-> (sel1 :.canvas-target)
-      (dommy/set-text! "")
-      (dommy/append! (node (build-board* width height)))))
-
-(def els (atom nil))
+      (dommy/append! (node (build-board* board-data)))))
 
 (defn play-event [ch message event]
   (let [target (.-target event)
@@ -72,6 +91,4 @@
   (doseq [l (keys (:click (first (vals (dommy/event-listeners (sel1 target))))))]
     (dommy/unlisten! (sel1 target) :click l))
   (-> (sel1 target)
-      (dommy/unlisten! target proxy)
-      (dommy/set-text! "")))
-
+      (dommy/clear!)))

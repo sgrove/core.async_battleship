@@ -30,9 +30,6 @@
 
 (set! (.-onload js/window) greet!)
 
-;(dommy/set-text! (sel1 :.canvas-target) "")
-;(html-board/build-board! :.canvas-target 2 2)
-
 (defn set-status! [status]
   (-> (sel1 :.status)
       (dommy/set-text! status)))
@@ -52,27 +49,29 @@
 (defn build [close-chan controls-chan target width height ship-count min-ship-size max-ship-size]
   (set-status! "Started")
   (let [game-board (new-game-board width height ship-count min-ship-size max-ship-size)
-        board-elem (html-board/build-board! :.canvas-target game-board)
-        play-ch (html-board/listen-to-board! :.canvas-target)]
+        board-elem (html-board/build-board! target game-board)
+        play-ch (html-board/listen-to-board! target)]
+    (my-utils/log "Gets here fine")
     (go (loop [play-ch play-ch]
+          (my-utils/log "never gets here")
           (alt!
            close-chan ([v] (stop! v))
            play-ch ([[message data event]]
-                      (do
-                        (my-utils/log "Play at: " (:x data) (:y data))
-                        (recur play-ch)))
+                      (my-utils/log "Play at: " (:x data) (:y data))
+                      (recur play-ch))
            controls-chan ([v] (condp = v
-                                :start (do (set-status! "Started via controls")
-                                           (stop! "Stopped via controls")
-                                           (html-board/build-board! :.canvas-target (inc (rand-int 26)) (inc (rand-int 26)))
-                                           (let [new-play-ch (html-board/listen-to-board! :.canvas-target)]
+                                :start (do (stop! "Stopped via controls")
+                                           (set-status! "Started via controls")
+                                           (let [game-board (new-game-board width height ship-count min-ship-size max-ship-size)
+                                                 board-elem (html-board/build-board! target game-board)
+                                                 new-play-ch (html-board/listen-to-board! target)]
                                              (recur new-play-ch)))
                                 :stop  (do (stop! "Stopped via controls")
-                                           (recur nil)))))))))
+                                           (recur play-ch)))))))))
 
 (def rc (chan))
+(build rc controls-signals :.canvas-target 10 10 5 2 6)
 
-(build rc controls-signals)
 ;(html-board/listen-to-board! :.canvas-target)
 ;; (go (my-utils/log "RC: " (<! rc)))
 ;; (go (my-utils/log "Control signal: " (<! controls-signals)))

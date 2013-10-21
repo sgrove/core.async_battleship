@@ -1,8 +1,9 @@
 (ns casyncfun.client.net
-  (:require [clojure.string :as string]
+  (:require [casyncfun.client.utils :as my-utils]
+            [clojure.string :as string]
+            [cljs.core.async :as async :refer [>! <! alts! chan sliding-buffer put! close!]]
             [goog.net.XhrIo :as xhr]
-            [goog.net.Jsonp :as jsonp]
-            [cljs.core.async :as async :refer [>! <! alts! chan sliding-buffer put! close!]])
+            [goog.net.Jsonp :as jsonp])
   (:require-macros [cljs.core.async.macros :as am :refer [go alt!]]))
 
 
@@ -18,15 +19,12 @@
                       (close! private-ch)))))
     private-ch))
 
-(defn log [s]
-  (.log js/console (str s)))
-
 (defn example []
   (go (let [text (<! (GET "/"))]
-        (log (str "Textual reponse: " text)))))
+        (my-utils/log (str "Textual reponse: " text)))))
 
 (defn call-jsonp [url & [payload]]
-  (log (str "Calling: " url))
+  (my-utils/log (str "Calling: " url))
   (let [ch (chan 1)]
     (->  (goog.Uri. url)
          (goog.net.Jsonp. )
