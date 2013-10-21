@@ -5,14 +5,45 @@
 
 (.log js/console "Running ClojureScript inside of casyncfun")
 
+(defn ^:export nrepl []
+  (repl/connect "http://localhost:9000/repl"))
+
+(set! (.-nrepl js/window)
+      nrepl)
+
 (def rc (chan))
+(def c2 (chan 100))
 
-(go (.log js/console "Outside")
-    (loop []
-      (.log js/console "Inside")
-      (let [msg (<! rc)]
-        (.log js/console "Message received: " msg)
-        (recur))))
+(def counter (atom 0))
 
-(put! rc "First message")
-(put! rc "Second message")
+(defn mark-status! [status]
+  (swap! counter inc)
+  (let [el (.getElementById js/document "status")
+        text (str (.-innerHTML el) "<li>" @counter ". " status "</li>")]
+    (set! (.-innerHTML el) text)))
+
+(defn test []
+  (let []
+    (mark-status! "CLJS Loaded")
+
+    (go (mark-status! "Outside")
+        (loop []
+          (mark-status! "Inside, never gets here.")
+          (let [msg (<! rc)]
+            (mark-status! (str "Message received: " msg))
+            (recur))))
+
+    (go (mark-status! (<! c2)))
+
+    (put! c2 "My message")
+
+    (put! rc "First message")
+    (put! rc "Second message")
+
+    (put! c2 "Another message")
+
+    (put! rc "First message")
+    (put! rc "Second message")))
+
+
+(set! (.-onload js/window) test)
