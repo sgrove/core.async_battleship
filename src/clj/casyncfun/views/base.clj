@@ -59,7 +59,4 @@
      [:a {:href "/help"} "HELP"]]]])
 
 (def footer-scripts
-  (list [:script {:src "http://getbootstrap.com/dist/js/jquery.js"}]
-        [:script {:src "http://getbootstrap.com/dist/js/bootstrap.min.js"}]
-        [:script {:src "http://getbootstrap.com/examples/offcanvas/offcanvas.js"}]
-        [:script {:src "/js/bin-debug/main.js"}]))
+  (list [:script {:src "/js/bin-debug/main.js"}]))
